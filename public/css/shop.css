@@ -1,0 +1,36 @@
+html, body  {
+
+  border: none;
+
+  font-family: arial;
+
+  margin: 0px;
+
+
+  cursor: default;}
+
+
+.centrum_ekranu{
+	border: 1px red solid;	
+	float:right;
+
+	margin-top:20px;
+	width:736px;
+}
+
+#wykres{
+	float:right;
+	
+}
+#statystyki{
+	float:left;
+}
+.menu_szczegoly{
+	float:left;
+}
+
+#menu_lewe{
+	float:left;
+	margin-top: 20px;
+	border: 1px green solid;
+}

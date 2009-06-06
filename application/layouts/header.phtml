@@ -1,0 +1,33 @@
+<div ><?php echo $this->LoggedInUser() ?> </div> 
+
+<div class="span-24">
+
+  <div class="span-3"> 
+  
+  		<a href="<?php echo $this->url(array('controller'=>'index',
+    	          'action'=>'index'));?>">Strona główna</a> 
+  </div>
+
+  <div class="span-2">
+  
+ 		 <a href="<?php echo $this->url(array('controller'=>'magazyn',
+    	          'action'=>'index'));?>">Magazyn</a>
+  </div>
+  
+  <div class="span-4">
+   		 <a href="<?php echo $this->url(array('controller'=>'zamowienia',
+    	          'action'=>'index'));?>">Zamówienia i klienci</a>
+  </div>
+  <div class="span-2">
+   		 <a href="<?php echo $this->url(array('controller'=>'statystyki',
+    	          'action'=>'index'));?>">Statystyki</a> 
+  </div>
+  <div class="span-2">
+   		 <a href="<?php echo $this->url(array('controller'=>'narzedzia',
+    	          'action'=>'index'));?>">Narzędzia</a>
+  </div>
+  <div class="span-4">
+   		 <a href="<?php echo $this->url(array('controller'=>'reklama',
+    	          'action'=>'index'));?>">Reklama i marketing</a>
+  </div>
+</div>

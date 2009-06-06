@@ -1,0 +1,21 @@
+<div>
+<table>
+<tr>
+<td>Col1</td>
+<td>Col2</td>
+<td>Col3</td>
+<td>Col4</td>
+</tr>
+<?php
+foreach($this->paginator as $producent):  ?>
+<tr>
+     <td><?php echo $this->escape($producent->PRC_Id);?></td>
+     <td><?php echo $this->escape($producent->PRC_Name);?></td>
+	 <td><?php echo $this->escape($producent->PRC_Url);?></td>
+	 <td><?php echo $this->escape($producent->PRC_Email);?></td>
+</tr>
+<? endforeach ?>
+
+</table>
+<?= $this->paginationControl($this->paginator2, 'Sliding', 'p.phtml');?>
+</div>

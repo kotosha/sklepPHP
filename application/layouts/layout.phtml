@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+   
+<html  lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+    <title><?php echo $this->escape($this->title); ?></title>
+      <!-- Framework CSS -->
+	<link rel="stylesheet"  href="<?php echo $this->baseUrl();?>/css/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet"  href="<?php echo $this->baseUrl();?>/css/blueprint/print.css" type="text/css" media="print">
+	<link rel="stylesheet"  href="<?php echo $this->baseUrl();?>/css/shop.css" type="text/css" media="screen">
+	
+	<link rel="stylesheet"  href="<?php echo $this->baseUrl();?>/css/dropdown_menu/dropdown_menu.css" type="text/css" media="screen">
+	<script type="text/javascript" src="<?php echo $this->baseUrl();?>/scripts/dropdown.js"></script>
+	
+  <!--[if IE]><link rel="stylesheet" href="<?php echo $this->baseUrl();?>/css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->  
+</head>
+
+<body>
+  	<div class="container showgrid">
+  		<div class="span-24">
+  			<?= $this->render('header.phtml') ?>
+  		</div>
+  		
+		<div class="span-24" id="con" >			
+    		<?php echo $this->layout()->content; ?>
+		</div>
+		
+   </div>
+
+<!--    
+<dl class="dropdown">
+  <dt id="one-ddheader" onmouseover="ddMenu('one',1)" onmouseout="ddMenu('one',-1)">Strona Główna</dt>
+  </dl>
+
+<dl class="dropdown">
+  <dt id="two-ddheader" onmouseover="ddMenu('two',1)" onmouseout="ddMenu('two',-1)">Magazyn</dt>
+  <dd id="two-ddcontent" onmouseover="cancelHide('two')" onmouseout="ddMenu('two',-1)">
+    <ul>
+      <li><a href="#" class="underline">Produkty</a></li>
+      <li><a href="#" class="underline">Kategorie</a></li>
+      <li><a href="#" class="underline">Producenci</a></li>
+    </ul>
+  </dd>
+</dl>
+ -->
+
+</body>
+</html>

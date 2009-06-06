@@ -1,0 +1,82 @@
+<br>
+<SCRIPT LANGUAGE="Javascript" SRC="<?php echo $this->baseUrl();?>/scripts/FusionCharts.js"></SCRIPT>
+<?php //echo $this->BaseUrl() 
+
+	# Create object of FusionCharts class of single series 
+ 	$FC = new FusionCharts("MSLine","420","300"); 
+	//$url = $this->BaseUrl();
+	# Set Relative Path of swf file. default path is charts
+ 	$FC->setSwfPath($this->BaseUrl().'/images/media/');
+	//Create the chart - Column 3D Chart with data from strXML 
+	# Create the Chart
+	echo '<div id="wykres">';
+ 	$FC->renderChartFromExtXML($this->xmlData);
+ 	echo '</div>';
+ 	
+?>
+<div id="statystyki" class="span-13 ">
+
+Nowe zamówienia     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        100000<br>
+Wszystkich zamówień	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		  200<br>
+Nowi klienci        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        500<br>
+Wszystkich klientów &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        500<br>
+Ilość produktów aktywnych	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        500<br>
+Produkty o ilości poniżej 10 szt. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        100<br>				
+
+<br><br>
+
+	<div id="" class="menu_szczegoly">
+		<ul>
+  		Magazyn
+  		<li> Produkty</li>
+  		<li>Kategorie</li>
+  		<li>Producenci</li>
+  		</ul>
+	</div>
+	<div id="" class="menu_szczegoly">
+		<ul>
+  		Klienci i Zamówienia  
+  		<li>Klienci</li>
+  		<li>Zamówienia</li>
+  		<li>Rabaty</li>
+  		<li>Faktury</li>
+  		</ul>
+	</div>
+	
+	<div id="" class="menu_szczegoly">
+		<ul>
+  		Narzędzia  
+  		<li>Kreator sondaży</li>
+  		<li>Kreator newslettera</li>
+  		<li>Kopia zapasowa systemu</li>
+  		<li>Wysyłka</li>
+  		<li>Waluty</li>
+  		<li>Języki</li>
+  		</ul>
+	</div>
+	<div id="" class="menu_szczegoly">
+		<ul>
+  		Statystyki
+  		<li> Najczęściej oglądane produkty</li>
+  		<li> Najczęściej kupowane produkty</li>
+  		<li> Najczęściej kupowane marki</li>
+  		<li> Ranking klientów - ilość produktów w zamówienu</li>
+  		<li> Ranking klientów - wartość zamówień</li>
+  		<li> Ranking klientów - rodzaj płatności</li>
+  		<li> Ranking klientów - rodzaj dostawy</li>
+  		<li> Produkty - bestsellery</li>
+  		</ul>
+	</div>
+	
+		
+	<div id="" class="menu_szczegoly">
+		<ul>
+  		Reklama i marketing  
+  		<li>Promocje</li>
+  		<li>Cross-selling && up-selling</li>
+  		<li>Produkt dnia</li>
+  		<li>Integracje</li>
+  		
+  		</ul>
+	</div>
+</div>
